@@ -9,26 +9,26 @@ const App = () => {
         </div>
       </header>
       <main className="container mx-auto p-4 flex-grow">
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="col-span-1">
-            <img src="plant1.jpg" alt="Plant 1" className="w-full h-auto rounded" />
-            <p className="mt-2 text-center">Plant 1 Description</p>
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="bg-gray-100 p-4 rounded-lg shadow-md">
+            <img src="/images/plant1.jpg" alt="Plant 1" className="w-full h-64 object-cover rounded" />
+            <p className="mt-2 text-center text-xl font-semibold">Plant 1 Description</p>
           </div>
-          <div className="col-span-1">
-            <img src="plant2.jpg" alt="Plant 2" className="w-full h-auto rounded" />
-            <p className="mt-2 text-center">Plant 2 Description</p>
+          <div className="bg-gray-100 p-4 rounded-lg shadow-md">
+            <img src="/images/plant2.jpg" alt="Plant 2" className="w-full h-64 object-cover rounded" />
+            <p className="mt-2 text-center text-xl font-semibold">Plant 2 Description</p>
           </div>
-          <div className="col-span-1">
-            <img src="plant3.jpg" alt="Plant 3" className="w-full h-auto rounded" />
-            <p className="mt-2 text-center">Plant 3 Description</p>
+          <div className="bg-gray-100 p-4 rounded-lg shadow-md">
+            <img src="/images/plant3.jpg" alt="Plant 3" className="w-full h-64 object-cover rounded" />
+            <p className="mt-2 text-center text-xl font-semibold">Plant 3 Description</p>
           </div>
-          <div className="col-span-1 md:col-span-2">
-            <img src="plant4.jpg" alt="Plant 4" className="w-full h-auto rounded" />
-            <p className="mt-2 text-center">Plant 4 Description</p>
+          <div className="bg-gray-100 p-4 rounded-lg shadow-md">
+            <img src="/images/plant4.jpg" alt="Plant 4" className="w-full h-64 object-cover rounded" />
+            <p className="mt-2 text-center text-xl font-semibold">Plant 4 Description</p>
           </div>
-          <div className="col-span-1 md:col-span-2 lg:col-span-3">
-            <img src="plant5.jpg" alt="Plant 5" className="w-full h-auto rounded" />
-            <p className="mt-2 text-center">Plant 5 Description</p>
+          <div className="bg-gray-100 p-4 rounded-lg shadow-md">
+            <img src="/images/plant5.jpg" alt="Plant 5" className="w-full h-64 object-cover rounded" />
+            <p className="mt-2 text-center text-xl font-semibold">Plant 5 Description</p>
           </div>
         </section>
       </main>
