@@ -24,51 +24,8 @@
       .catalogue-item:hover {
         transform: scale(1.05);
       }
-      .carousel {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        max-width: 600px;
-        margin: auto;
-      }
-      .carousel-inner {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-        width: 300%;
-      }
-      .carousel-item {
-        min-width: 100%;
-        box-sizing: border-box;
-      }
-      input[type="radio"] {
-        display: none;
-      }
-      .carousel-indicators {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-      }
-      .carousel-indicators label {
-        background-color: rgba(255, 255, 255, 0.5);
-        border: 1px solid white;
-        border-radius: 50%;
-        width: 12px;
-        height: 12px;
-        margin: 0 5px;
-        cursor: pointer;
-      }
-      #carousel-1:checked ~ .carousel-inner {
-        transform: translateX(0%);
-      }
-      #carousel-2:checked ~ .carousel-inner {
-        transform: translateX(-100%);
-      }
-      #carousel-3:checked ~ .carousel-inner {
-        transform: translateX(-200%);
-      }
-      </style>
+      
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -101,16 +58,16 @@
       </section>
     
       <!-- Footer Section -->
-      <footer class="bg-green-700 text-white py-8">
+      <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h4 class="text-xl font-bold mb-4">About GardenGreen</h4>
-              <p>We provide a variety of plants and gardening supplies to help you create your dream garden.</p>
+              <p class="text-gray-400">We provide a variety of plants and gardening supplies to help you create your dream garden.</p>
             </div>
             <div>
               <h4 class="text-xl font-bold mb-4">Quick Links</h4>
-              <ul>
+              <ul class="text-gray-300">
                 <li><a href="#" class="hover:underline">Home</a></li>
                 <li><a href="#" class="hover:underline">Catalogue</a></li>
                 <li><a href="#" class="hover:underline">Contact</a></li>
@@ -118,8 +75,17 @@
             </div>
             <div>
               <h4 class="text-xl font-bold mb-4">Contact Us</h4>
-              <p>Email: info@gardengreen.com</p>
-              <p>Phone: +123-456-7890</p>
+              <p class="text-gray-400">Email: info@gardengreen.com</p>
+              <p class="text-gray-400">Phone: +123-456-7890</p>
+              <div class="mt-6">
+                <h5 class="text-lg font-semibold mb-2">Get in Touch</h5>
+                <form action="#" method="POST" class="space-y-4">
+                  <input type="text" name="name" placeholder="Your Name" class="w-full p-2 rounded-md border border-gray-600 bg-gray-800 text-white" required>
+                  <input type="email" name="email" placeholder="Your Email" class="w-full p-2 rounded-md border border-gray-600 bg-gray-800 text-white" required>
+                  <textarea name="message" placeholder="Your Message" class="w-full p-2 rounded-md border border-gray-600 bg-gray-800 text-white h-32" required></textarea>
+                  <button type="submit" class="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600">Send Message</button>
+                </form>
+              </div>
             </div>
           </div>
           <div class="text-center mt-8">
