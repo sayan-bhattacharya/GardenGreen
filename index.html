@@ -1,59 +1,5 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Garden green</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-      @keyframes slide-in-right {
-        0% {
-          transform: translateX(100%);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
-      .catalogue-item {
-        animation: slide-in-right 0.5s ease-in-out;
-        transition: transform 0.3s ease-in-out;
-      }
-      .catalogue-item:hover {
-        transform: scale(1.05);
-      }
-      
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    <body class="bg-green-50 text-gray-800">
-
-      <!-- Catalogue Section -->
-      <section class="py-12">
-        <div class="container mx-auto px-4">
-          <h2 class="text-4xl font-bold text-center mb-12">Our Catalogue</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            <div class="catalogue-item bg-white p-4 rounded-lg shadow-lg hover:shadow-xl">
-              <img src="indoorplant.jpg" alt="Item 1" class="w-full h-40 object-cover rounded-t-lg">
-              <h3 class="text-xl font-semibold mt-4">Plant 1</h3>
-              <p class="text-gray-600">Beautiful indoor plant.</p>
-            </div>
-            <div class="catalogue-item bg-white p-4 rounded-lg shadow-lg hover:shadow-xl">
-              <img src="low.maintainance.webp" alt="Item 2" class="w-full h-40 object-cover rounded-t-lg">
-              <h3 class="text-xl font-semibold mt-4">Plant 2</h3>
-              <p class="text-gray-600">Low maintenance plant.</p>
-            </div>
-            <div class="carousel-item">
-              <div class="catalogue-item bg-white p-4 rounded-lg shadow-lg hover:shadow-xl">
-                <img src="plants.jpg" alt="Item 3" class="w-full h-40 object-cover rounded-t-lg">
-                <h3 class="text-xl font-semibold mt-4">Plant 3</h3>
-                <p class="text-gray-600">A Bird of Paradise Plants to Bring a Tropical Look to Your Home.</p>
-              </div>
-=======
 
 <head>
   <meta charset="UTF-8" />
@@ -82,57 +28,58 @@
     .catalogue-item:hover {
       transform: scale(1.05);
     }
+
     .work-sans {
-            font-family: 'Work Sans', sans-serif;
-        }
-                
-        #menu-toggle:checked + #menu {
-            display: block;
-        }
-        
-        .hover\:grow {
-            transition: all 0.3s;
-            transform: scale(1);
-        }
-        
-        .hover\:grow:hover {
-            transform: scale(1.02);
-        }
-        
-        .carousel-open:checked + .carousel-item {
-            position: static;
-            opacity: 100;
-        }
-        
-        .carousel-item {
-            -webkit-transition: opacity 0.6s ease-out;
-            transition: opacity 0.6s ease-out;
-        }
-        
-        #carousel-1:checked ~ .control-1,
-        #carousel-2:checked ~ .control-2,
-        #carousel-3:checked ~ .control-3 {
-            display: block;
-        }
-        
-        .carousel-indicators {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            bottom: 2%;
-            left: 0;
-            right: 0;
-            text-align: center;
-            z-index: 10;
-        }
-        
-        #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-        #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-        #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-            color: #000;
-            /*Set to match the Tailwind colour you want the active one to be */
-        }
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    #menu-toggle:checked+#menu {
+      display: block;
+    }
+
+    .hover\:grow {
+      transition: all 0.3s;
+      transform: scale(1);
+    }
+
+    .hover\:grow:hover {
+      transform: scale(1.02);
+    }
+
+    .carousel-open:checked+.carousel-item {
+      position: static;
+      opacity: 100;
+    }
+
+    .carousel-item {
+      -webkit-transition: opacity 0.6s ease-out;
+      transition: opacity 0.6s ease-out;
+    }
+
+    #carousel-1:checked~.control-1,
+    #carousel-2:checked~.control-2,
+    #carousel-3:checked~.control-3 {
+      display: block;
+    }
+
+    .carousel-indicators {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      bottom: 2%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 10;
+    }
+
+    #carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+    #carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+    #carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+      color: #000;
+      /*Set to match the Tailwind colour you want the active one to be */
+    }
   </style>
 </head>
 
@@ -159,43 +106,9 @@
           </div>
           <!-- Add more items as needed -->
         </div>
-      </section>
-    
-      <!-- Footer Section -->
-      <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h4 class="text-xl font-bold mb-4">About GardenGreen</h4>
-              <p class="text-gray-400">We provide a variety of plants and gardening supplies to help you create your dream garden.</p>
-            </div>
-            <div>
-              <h4 class="text-xl font-bold mb-4">Quick Links</h4>
-              <ul class="text-gray-300">
-                <li><a href="#" class="hover:underline">Home</a></li>
-                <li><a href="#" class="hover:underline">Catalogue</a></li>
-                <li><a href="#" class="hover:underline">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="text-xl font-bold mb-4">Contact Us</h4>
-              <p class="text-gray-400">Email: info@gardengreen.com</p>
-              <p class="text-gray-400">Phone: +123-456-7890</p>
-              <div class="mt-6">
-                <h5 class="text-lg font-semibold mb-2">Get in Touch</h5>
-                <form action="#" method="POST" class="space-y-4">
-                  <input type="text" name="name" placeholder="Your Name" class="w-full p-2 rounded-md border border-gray-600 bg-gray-800 text-white" required>
-                  <input type="email" name="email" placeholder="Your Email" class="w-full p-2 rounded-md border border-gray-600 bg-gray-800 text-white" required>
-                  <textarea name="message" placeholder="Your Message" class="w-full p-2 rounded-md border border-gray-600 bg-gray-800 text-white h-32" required></textarea>
-                  <button type="submit" class="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600">Send Message</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="text-center mt-8">
-            <p>&copy; 2024 GardenGreen. All rights reserved.</p>
-      </div>
     </section>
+
+
 
     <!-- Products Section -->
     <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
@@ -230,7 +143,9 @@
       <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
         <a href="#">
           <div class="catalogue-item bg-white p-4 rounded-lg shadow-lg hover:shadow-xl">
-            <img src="https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FCup-Flower.jpeg&w=384&q=75" alt="Item 2" class="w-full h-40 object-cover rounded-t-lg">
+            <img
+              src="https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FCup-Flower.jpeg&w=384&q=75"
+              alt="Item 2" class="w-full h-40 object-cover rounded-t-lg">
             <h3 class="text-xl font-semibold mt-4">Cup Flower</h3>
             <p class="text-gray-600">Low maintenance plant.</p>
           </div>
@@ -251,7 +166,9 @@
       <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
         <a href="#">
           <div class="catalogue-item bg-white p-4 rounded-lg shadow-lg hover:shadow-xl">
-            <img src="https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FCucumber-Tree.jpeg&w=384&q=75" alt="Item 2" class="w-full h-40 object-cover rounded-t-lg">
+            <img
+              src="https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FCucumber-Tree.jpeg&w=384&q=75"
+              alt="Item 2" class="w-full h-40 object-cover rounded-t-lg">
             <h3 class="text-xl font-semibold mt-4">Cucumber Tree</h3>
             <p class="text-gray-600">Low maintenance plant.</p>
           </div>
@@ -272,7 +189,9 @@
       <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
         <a href="#">
           <div class="catalogue-item bg-white p-4 rounded-lg shadow-lg hover:shadow-xl">
-            <img src="https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FAjuga.jpeg&w=384&q=75" alt="Item 2" class="w-full h-40 object-cover rounded-t-lg">
+            <img
+              src="https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FAjuga.jpeg&w=384&q=75"
+              alt="Item 2" class="w-full h-40 object-cover rounded-t-lg">
             <h3 class="text-xl font-semibold mt-4">Ajuga</h3>
             <p class="text-gray-600">Low maintenance plant.</p>
           </div>
@@ -293,7 +212,9 @@
       <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
         <a href="#">
           <div class="catalogue-item bg-white p-4 rounded-lg shadow-lg hover:shadow-xl">
-            <img src="https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FChinese-Dwarf-Banana-Tree.jpeg&w=384&q=75" alt="Item 2" class="w-full h-40 object-cover rounded-t-lg">
+            <img
+              src="https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FChinese-Dwarf-Banana-Tree.jpeg&w=384&q=75"
+              alt="Item 2" class="w-full h-40 object-cover rounded-t-lg">
             <h3 class="text-xl font-semibold mt-4">Chinese Dwarf Banana Tree</h3>
             <p class="text-gray-600">Low maintenance plant.</p>
           </div>
@@ -314,7 +235,9 @@
       <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
         <a href="#">
           <div class="catalogue-item bg-white p-4 rounded-lg shadow-lg hover:shadow-xl">
-            <img src="https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FCanna-Lily.jpeg&w=384&q=75" alt="Item 2" class="w-full h-40 object-cover rounded-t-lg">
+            <img
+              src="https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FCanna-Lily.jpeg&w=384&q=75"
+              alt="Item 2" class="w-full h-40 object-cover rounded-t-lg">
             <h3 class="text-xl font-semibold mt-4">Canna Lilly</h3>
             <p class="text-gray-600">Low maintenance plant.</p>
           </div>
@@ -338,84 +261,101 @@
     <h2 class="text-4xl font-bold text-center mb-12">Testimonials</h2>
     <div class="carousel relative container mx-auto" style="max-width:1600px;">
       <div class="carousel-inner relative overflow-hidden w-full">
-          <!--Slide 1-->
-          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-          <div class="carousel-item absolute opacity-0" style="height:50vh;">
-              <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right" style="background-image: url('https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FAfrican-Spear-Plant.jpeg&w=384&q=75');">
+        <!--Slide 1-->
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+          checked="checked">
+        <div class="carousel-item absolute opacity-0" style="height:50vh;">
+          <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
+            style="background-image: url('https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FAfrican-Spear-Plant.jpeg&w=384&q=75');">
 
-                  <div class="container mx-auto">
-                      <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
-                          <p class="text-black text-2xl my-4">"Best plants shop ever"</p>
-                          <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black" href="#">view testimonial</a>
-                      </div>
-                  </div>
-
+            <div class="container mx-auto">
+              <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                <p class="text-black text-2xl my-4">"Best plants shop ever"</p>
+                <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
+                  href="#">view testimonial</a>
               </div>
+            </div>
+
           </div>
-          <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-          <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+        </div>
+        <label for="carousel-3"
+          class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+        <label for="carousel-2"
+          class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
-          <!--Slide 2-->
-          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-          <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:50vh;">
-              <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right" style="background-image: url('https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FRed-Twig-Dogwood.jpeg&w=384&q=75');">
+        <!--Slide 2-->
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:50vh;">
+          <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
+            style="background-image: url('https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FRed-Twig-Dogwood.jpeg&w=384&q=75');">
 
-                  <div class="container mx-auto">
-                      <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
-                          <p class="text-black text-2xl my-4">"Kickass"</p>
-                          <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black" href="#">view testimonial</a>
-                      </div>
-                  </div>
-
+            <div class="container mx-auto">
+              <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                <p class="text-black text-2xl my-4">"Kickass"</p>
+                <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
+                  href="#">view testimonial</a>
               </div>
+            </div>
+
           </div>
-          <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-          <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+        </div>
+        <label for="carousel-1"
+          class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+        <label for="carousel-3"
+          class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
-          <!--Slide 3-->
-          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-          <div class="carousel-item absolute opacity-0" style="height:50vh;">
-              <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-bottom" style="background-image: url('https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FPrickly-Pear.jpeg&w=384&q=75');">
+        <!--Slide 3-->
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item absolute opacity-0" style="height:50vh;">
+          <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-bottom"
+            style="background-image: url('https://randomgenerate.io/_next/image?url=https%3A%2F%2Fstatic-abbreviations.nyc3.digitaloceanspaces.com%2Frandom-generate%2Frandom-plant-generator%2FPrickly-Pear.jpeg&w=384&q=75');">
 
-                  <div class="container mx-auto">
-                      <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
-                          <p class="text-black text-2xl my-4">"Loved it!!"</p>
-                          <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black" href="#">view testimonial</a>
-                      </div>
-                  </div>
-
+            <div class="container mx-auto">
+              <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                <p class="text-black text-2xl my-4">"Loved it!!"</p>
+                <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
+                  href="#">view testimonial</a>
               </div>
-          </div>
-          <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-          <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+            </div>
 
-          <!-- Add additional indicators for each slide-->
-          <ol class="carousel-indicators">
-              <li class="inline-block mr-3">
-                  <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-              </li>
-              <li class="inline-block mr-3">
-                  <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-              </li>
-              <li class="inline-block mr-3">
-                  <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-              </li>
-          </ol>
+          </div>
+        </div>
+        <label for="carousel-2"
+          class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+        <label for="carousel-1"
+          class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+        <!-- Add additional indicators for each slide-->
+        <ol class="carousel-indicators">
+          <li class="inline-block mr-3">
+            <label for="carousel-1"
+              class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+          </li>
+          <li class="inline-block mr-3">
+            <label for="carousel-2"
+              class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+          </li>
+          <li class="inline-block mr-3">
+            <label for="carousel-3"
+              class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+          </li>
+        </ol>
 
       </div>
-  </div>    
+    </div>
 
     <!-- Footer Section -->
-    <footer class="bg-green-700 text-white py-8">
+    <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h4 class="text-xl font-bold mb-4">About GardenGreen</h4>
-            <p>We provide a variety of plants and gardening supplies to help you create your dream garden.</p>
+            <p class="text-gray-400">We provide a variety of plants and gardening supplies to help you create your dream
+              garden.</p>
           </div>
           <div>
             <h4 class="text-xl font-bold mb-4">Quick Links</h4>
-            <ul>
+            <ul class="text-gray-300">
               <li><a href="#" class="hover:underline">Home</a></li>
               <li><a href="#" class="hover:underline">Catalogue</a></li>
               <li><a href="#" class="hover:underline">Contact</a></li>
@@ -423,14 +363,27 @@
           </div>
           <div>
             <h4 class="text-xl font-bold mb-4">Contact Us</h4>
-            <p>Email: info@gardengreen.com</p>
-            <p>Phone: +123-456-7890</p>
+            <p class="text-gray-400">Email: info@gardengreen.com</p>
+            <p class="text-gray-400">Phone: +123-456-7890</p>
+            <div class="mt-6">
+              <h5 class="text-lg font-semibold mb-2">Get in Touch</h5>
+              <form action="#" method="POST" class="space-y-4">
+                <input type="text" name="name" placeholder="Your Name"
+                  class="w-full p-2 rounded-md border border-gray-600 bg-gray-800 text-white" required>
+                <input type="email" name="email" placeholder="Your Email"
+                  class="w-full p-2 rounded-md border border-gray-600 bg-gray-800 text-white" required>
+                <textarea name="message" placeholder="Your Message"
+                  class="w-full p-2 rounded-md border border-gray-600 bg-gray-800 text-white h-32" required></textarea>
+                <button type="submit" class="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600">Send
+                  Message</button>
+              </form>
+            </div>
           </div>
         </div>
         <div class="text-center mt-8">
           <p>&copy; 2024 GardenGreen. All rights reserved.</p>
         </div>
-      </div>
+        </section>
     </footer>
   </body>
 
