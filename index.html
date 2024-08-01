@@ -1,5 +1,59 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garden green</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      @keyframes slide-in-right {
+        0% {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .catalogue-item {
+        animation: slide-in-right 0.5s ease-in-out;
+        transition: transform 0.3s ease-in-out;
+      }
+      .catalogue-item:hover {
+        transform: scale(1.05);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <body class="bg-green-50 text-gray-800">
+
+      <!-- Catalogue Section -->
+      <section class="py-12">
+        <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-12">Our Catalogue</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="catalogue-item bg-white p-4 rounded-lg shadow-lg hover:shadow-xl">
+              <img src="indoorplant.jpg" alt="Item 1" class="w-full h-40 object-cover rounded-t-lg">
+              <h3 class="text-xl font-semibold mt-4">Plant 1</h3>
+              <p class="text-gray-600">Beautiful indoor plant.</p>
+            </div>
+            <div class="catalogue-item bg-white p-4 rounded-lg shadow-lg hover:shadow-xl">
+              <img src="low.maintainance.webp" alt="Item 2" class="w-full h-40 object-cover rounded-t-lg">
+              <h3 class="text-xl font-semibold mt-4">Plant 2</h3>
+              <p class="text-gray-600">Low maintenance plant.</p>
+            </div>
+            <div class="carousel-item">
+              <div class="catalogue-item bg-white p-4 rounded-lg shadow-lg hover:shadow-xl">
+                <img src="plants.jpg" alt="Item 3" class="w-full h-40 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-4">Plant 3</h3>
+                <p class="text-gray-600">A Bird of Paradise Plants to Bring a Tropical Look to Your Home.</p>
+              </div>
+=======
 
 <head>
   <meta charset="UTF-8" />
@@ -105,6 +159,41 @@
           </div>
           <!-- Add more items as needed -->
         </div>
+      </section>
+    
+      <!-- Footer Section -->
+      <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h4 class="text-xl font-bold mb-4">About GardenGreen</h4>
+              <p class="text-gray-400">We provide a variety of plants and gardening supplies to help you create your dream garden.</p>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+              <ul class="text-gray-300">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">Catalogue</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-4">Contact Us</h4>
+              <p class="text-gray-400">Email: info@gardengreen.com</p>
+              <p class="text-gray-400">Phone: +123-456-7890</p>
+              <div class="mt-6">
+                <h5 class="text-lg font-semibold mb-2">Get in Touch</h5>
+                <form action="#" method="POST" class="space-y-4">
+                  <input type="text" name="name" placeholder="Your Name" class="w-full p-2 rounded-md border border-gray-600 bg-gray-800 text-white" required>
+                  <input type="email" name="email" placeholder="Your Email" class="w-full p-2 rounded-md border border-gray-600 bg-gray-800 text-white" required>
+                  <textarea name="message" placeholder="Your Message" class="w-full p-2 rounded-md border border-gray-600 bg-gray-800 text-white h-32" required></textarea>
+                  <button type="submit" class="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-8">
+            <p>&copy; 2024 GardenGreen. All rights reserved.</p>
       </div>
     </section>
 
@@ -134,7 +223,6 @@
                   d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z" />
               </svg>
             </a>
-
           </div>
         </div>
       </nav>
