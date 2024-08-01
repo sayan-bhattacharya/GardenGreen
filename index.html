@@ -21,11 +21,54 @@
         animation: slide-in-right 0.5s ease-in-out;
         transition: transform 0.3s ease-in-out;
       }
-  
       .catalogue-item:hover {
         transform: scale(1.05);
       }
-    </style>
+      .carousel {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+      }
+      .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 300%;
+      }
+      .carousel-item {
+        min-width: 100%;
+        box-sizing: border-box;
+      }
+      input[type="radio"] {
+        display: none;
+      }
+      .carousel-indicators {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+      }
+      .carousel-indicators label {
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 1px solid white;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      #carousel-1:checked ~ .carousel-inner {
+        transform: translateX(0%);
+      }
+      #carousel-2:checked ~ .carousel-inner {
+        transform: translateX(-100%);
+      }
+      #carousel-3:checked ~ .carousel-inner {
+        transform: translateX(-200%);
+      }
+      </style>
   </head>
   <body>
     <div id="root"></div>
@@ -47,7 +90,12 @@
               <h3 class="text-xl font-semibold mt-4">Plant 2</h3>
               <p class="text-gray-600">Low maintenance plant.</p>
             </div>
-            <!-- Add more items as needed -->
+            <div class="carousel-item">
+              <div class="catalogue-item bg-white p-4 rounded-lg shadow-lg hover:shadow-xl">
+                <img src="plants.jpg" alt="Item 3" class="w-full h-40 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-4">Plant 3</h3>
+                <p class="text-gray-600">A Bird of Paradise Plants to Bring a Tropical Look to Your Home.</p>
+              </div>
           </div>
         </div>
       </section>
